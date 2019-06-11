@@ -1,7 +1,48 @@
-# Compiled class file
+# 在这里设置忽略文件
+
+# vim
+*.swp
+
+# vscode
+.vscode/
+
+# java
+*.war
 *.class
+MANIFEST.MF
+resource/
+out/
+.myumldata
+
+# maven
+target/
+
+# eclipse
+.settings/
+.classpath
+.project
+bin/
+classes/
+*.launch
+
+# myeclipse
+.myeclipse/
+.externalToolBuilders/
+.mymetadata
+.springBeans
+.tern-project
+META-INF/
+
+# idea
+.idea
+.idea/
+*.iws
+*.iml
+*.ipr
 
 # Log file
+logs/
+log/
 *.log
 
 # BlueJ files
@@ -17,8 +58,3 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-/.idea
-/target
