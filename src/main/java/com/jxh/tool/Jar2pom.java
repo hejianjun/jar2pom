@@ -50,15 +50,15 @@ public class Jar2pom {
             return;
         }
         for (File jar : libs) {
-            builder.append("<!--  ").append(jar.getName()).append(" -->\n");
+            builder.append("<!-- ").append(jar.getName()).append(" -->\n");
             if (!getPomByChecksum(jar).isTextOnly()) {
-                builder.append("<!--  Search by Checksum -->\n");
+                builder.append("<!-- Search by Checksum -->\n");
                 builder.append(getPomByChecksum(jar).asXML());
             } else if (!getPomByManifest(jar).isTextOnly()) {
-                builder.append("<!--  Search by Manifest -->\n");
+                builder.append("<!-- Search by Manifest -->\n");
                 builder.append(getPomByManifest(jar).asXML());
             } else {
-                builder.append("<!--  No data was found -->");
+                builder.append("<!-- No data was found -->");
             }
             builder.append("\n");
         }
